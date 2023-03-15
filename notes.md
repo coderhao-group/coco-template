@@ -9,5 +9,3 @@ coco-component.vue?7b09:136
        Uncaught DOMException: Failed to set the 'domain' property on 'Document': 'coco-h5.cn' is not a suffix of 'localhost'.
 
 
-
-  npm i --legacy-peer-deps
