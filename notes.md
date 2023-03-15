@@ -9,5 +9,16 @@ coco-component.vue?7b09:136
        Uncaught DOMException: Failed to set the 'domain' property on 'Document': 'coco-h5.cn' is not a suffix of 'localhost'.
 
 
-aaa.coco-h5.cn:8081 
-aaa.coco-h5.cn:8081/?isEdit=true
+改host之后 
+127.0.0.1 aaa.coco-h5.cn
+
+梯子要关掉全局代理才能访问
+
+模板项目：aaa.coco-h5.cn:8081 
+接口报错
+http://qa.api.com/api/api/1.0.0/getCampaignInfo
+因为走了预览的接口，改成下方的mock接口：
+http://aaa.coco-h5.cn:8081/?isEdit=true
+
+
+aaa.coco-h5.cn:8080/#/edit?id=1&pageld=426608548
