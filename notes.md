@@ -9,3 +9,5 @@ coco-component.vue?7b09:136
        Uncaught DOMException: Failed to set the 'domain' property on 'Document': 'coco-h5.cn' is not a suffix of 'localhost'.
 
 
+aaa.coco-h5.cn:8081 
+aaa.coco-h5.cn:8081/?isEdit=true
