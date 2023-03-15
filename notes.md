@@ -22,3 +22,44 @@ http://aaa.coco-h5.cn:8081/?isEdit=true
 
 
 aaa.coco-h5.cn:8080/#/edit?id=1&pageld=426608548
+
+
+
+pageConfig:  {
+  config: {
+    templateId: 1,
+    templateGit: 'coderhao-group/coco-template',
+    templateName: 'coco-template',
+    projectName: '活动777',
+    gitName: 'qwer',
+    templateVersion: '0.2.7'
+  },
+  userSelectComponents: [],
+  components: []
+}
+coderhao-group/coco-template
+
+创建页面时必须关掉代理，结果才能响应成功，创建的仓库里才有代码
+
+pageConfig:  {
+  config: {
+    templateId: 1,
+    templateGit: 'coderhao-group/coco-template',
+    templateName: 'coco-template',
+    projectName: '活动888',
+    gitName: 'qqqq',
+    templateVersion: '0.2.7'
+  },
+  userSelectComponents: [],
+  components: []
+}
+coderhao-group/coco-template
+Connection to ssh.github.com port 443 [tcp/https] succeeded!
+To github.com:coderhao-group/qqqq.git
+ * [new branch]      master -> gh-pages
+
+点击Pages，等待5分钟
+自动生成下方的网页
+https://coderhao-group.github.io/qqqq/
+报跨域
+ Uncaught DOMException: Failed to set the 'domain' property on 'Document': 'huodong.goodcoder.tech' is not a suffix of 'coderhao-group.github.io'.
