@@ -2,7 +2,10 @@
 
 ## Project setup
 ```
-npm install
+npm install 报错
+
+npm i --legacy-peer-deps
+
 ```
 
 ### Compiles and hot-reloads for development

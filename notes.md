@@ -7,3 +7,7 @@ npm ERR! 502 Bad Gateway - GET http://npmreg.qa.91jkys.com/axios/-/axios-0.21.1.
 coco-component.vue?7b09:136 
         
        Uncaught DOMException: Failed to set the 'domain' property on 'Document': 'coco-h5.cn' is not a suffix of 'localhost'.
+
+
+
+  npm i --legacy-peer-deps
