@@ -39,7 +39,7 @@ pageConfig:  {
 }
 coderhao-group/coco-template
 
-创建页面时必须关掉代理，结果才能响应成功，创建的仓库里才有代码
+创建页面时必须关掉代理，结果才能响应成功，创建的仓库里才有代码(貌似也不是必须关闭。。。。)
 
 pageConfig:  {
   config: {
@@ -62,4 +62,8 @@ To github.com:coderhao-group/qqqq.git
 自动生成下方的网页
 https://coderhao-group.github.io/qqqq/
 报跨域
+ Uncaught DOMException: Failed to set the 'domain' property on 'Document': 'huodong.goodcoder.tech' is not a suffix of 'coderhao-group.github.io'.
+
+
+https://coderhao-group.github.io/wwww/
  Uncaught DOMException: Failed to set the 'domain' property on 'Document': 'huodong.goodcoder.tech' is not a suffix of 'coderhao-group.github.io'.
