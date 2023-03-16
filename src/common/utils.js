@@ -90,14 +90,14 @@ export const baseUrl = {
 }[env]
 
 
-export function postMsgToParent (message) {
+export function postMsgToParent(message) {
   window.parent.postMessage(
     message,
     '*'
   );
 }
 
-export function getDefaultProps (schema) {
+export function getDefaultProps(schema) {
   const props = {};
   Object.keys(schema).forEach(key => {
     const { type, defaultValue, values } = schema[key];
@@ -112,16 +112,16 @@ export function getDefaultProps (schema) {
   return props;
 }
 
-export function xhrGet( url, callback ){
+export function xhrGet(url, callback) {
   const request = new XMLHttpRequest();
-  request.open( "GET", url );
+  request.open("GET", url);
   request.withCredentials = true
   request.responseType = 'json'
-  request.onreadystatechange = function(){
-    if( request.readyState !== 4 ) return;
-    if( request.status === 200 ){
-      callback( request.response );
+  request.onreadystatechange = function () {
+    if (request.readyState !== 4) return;
+    if (request.status === 200) {
+      callback(request.response);
     }
   }
-  request.send( null )
+  request.send(null)
 }

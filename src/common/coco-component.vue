@@ -159,12 +159,13 @@ export default {
         : this.$slots.default.map(c => {
           const name = c.componentOptions.tag;
           const { data } =  config.componentConfig.filter(config => config.name === name)[0];
+          // console.log('data: ', data); //{btnText: '提交'} {src: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png'}
           return {
             name,
             props: c.componentOptions.propsData?.obj || data
           };
         }),
-      componentConfig: config.componentConfig,
+      componentConfig: config.componentConfig,// 读取components下的json配置
       currentIndex: 0,
       remoteComponents: [],
       page: {
@@ -174,6 +175,7 @@ export default {
     };
   },
   created() {
+    // console.log(this.$slots.default)
     // 预览
     if (isPreview && baseUrl && pageId) {
       xhrGet(`${baseUrl}/project/preview?id=${pageId}`, (res) => {
@@ -202,6 +204,7 @@ export default {
      * @param config
      */
     setConfig(config) {
+      console.log('config: ', config);
       this.components = config.userSelectComponents;
       this.page = config.page;
       this.getConfig();
